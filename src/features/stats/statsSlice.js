@@ -37,7 +37,10 @@ export const statsApi = supabaseApi.injectEndpoints({
         const gamesNumber = games.length;
 
         const successRate =
-          games.filter((game) => game.result === "won").length / games.length;
+          games.length > 0
+            ? games.filter((game) => game.result === "won").length /
+              games.length
+            : 0;
 
         const avgMoves = games
           .filter((game) => game.result === "won")
