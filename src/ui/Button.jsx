@@ -4,7 +4,6 @@ const sizes = {
   small: css`
     font-size: 1.2rem;
     padding: 0.8rem 1.6rem;
-    /* text-transform: uppercase; */
     font-weight: 600;
     text-align: center;
   `,
@@ -15,7 +14,6 @@ const sizes = {
   `,
   large: css`
     font-size: 1.6rem;
-    /* text-transform: uppercase; */
     padding: 1.2rem 2.4rem;
     font-weight: 700;
   `,
@@ -56,10 +54,8 @@ const variations = {
 
     color: var(--color-grey-100);
     cursor: pointer;
-    /* text-decoration: underline; */
 
     &:hover {
-      /* color: var(--color-main-500); */
       text-decoration: none;
       border: none;
     }

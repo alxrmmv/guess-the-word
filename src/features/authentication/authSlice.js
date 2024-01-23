@@ -1,5 +1,5 @@
-import { supabaseApi } from "../../services/apiSupabase";
 import supabase from "../../services/supabase";
+import { supabaseApi } from "../../services/apiSupabase";
 
 export const authApi = supabaseApi.injectEndpoints({
   endpoints: (builder) => ({
@@ -21,8 +21,6 @@ export const authApi = supabaseApi.injectEndpoints({
           dispatch(
             authApi.util.upsertQueryData("getCurrentUser", undefined, user)
           );
-          // console.log("patchResult", patchResult);
-          // console.log(user);
         } catch {
           return;
         }
@@ -58,18 +56,15 @@ export const authApi = supabaseApi.injectEndpoints({
           const {
             data: { user },
           } = await queryFulfilled;
-          // console.log("USER", user);
+
           const patchResult = dispatch(
             authApi.util.upsertQueryData("getCurrentUser", undefined, user)
           );
           console.log("USER", user, patchResult);
-          // console.log("patchResult", patchResult);
-          // console.log(user);
         } catch {
           return;
         }
       },
-      // providesTags: ["User"],
     }),
     getCurrentUser: builder.query({
       queryFn: async () => {

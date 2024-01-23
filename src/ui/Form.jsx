@@ -22,11 +22,6 @@ const StyledFormRow = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-
-  /* margin: 0 auto; */
-  /* justify-self: center; */
-  /* padding: 1.2rem 0; */
-
   ${(props) => justifications[props.$justify]}
 `;
 
@@ -41,23 +36,18 @@ const Error = styled.span`
 `;
 
 const Input = styled.input`
-  /* border: 1px solid var(--color-grey-200); */
   font-family: inherit;
   font-size: 1.6rem;
   color: var(--color-grey-800);
   border: none;
   background-color: var(--color-grey-100);
   border-radius: var(--border-radius-sm);
-  /* box-shadow: var(--shadow-sm); */
   padding: 0.8rem 1.2rem;
   min-width: 0;
 
   &::placeholder {
     font-family: inherit;
     color: var(--color-grey-500);
-    /* font-weight: bold;
-    font-size: 16px;
-    color: #999999; */
   }
 `;
 

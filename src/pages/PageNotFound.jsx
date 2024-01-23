@@ -1,5 +1,7 @@
+import PageContainer from "../ui/PageContainer";
+
 function PageNotFound() {
-  return <div>Page not found!</div>;
+  return <PageContainer title="Page not found"></PageContainer>;
 }
 
 export default PageNotFound;

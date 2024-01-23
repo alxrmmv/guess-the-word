@@ -9,7 +9,6 @@ const StyledPageContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto 1fr;
-  /* row-gap: 1.2rem; */
 
   background-color: var(--color-violet-700);
   border-top-left-radius: var(--border-radius-xlg);
@@ -25,9 +24,6 @@ const CloseButtonContainer = styled.div`
 
 const ContentContainer = styled.div`
   grid-column: 1/-1;
-  /* margin-top: 1.2rem; */
-  /* padding: 1.2rem; */
-  /* grid-row: 2; */
 `;
 
 const HeaderContainer = styled.div`

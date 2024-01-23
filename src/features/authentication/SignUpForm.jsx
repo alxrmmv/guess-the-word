@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import Form from "../../ui/Form";
-
-import Button from "../../ui/Button";
-
 import { useSignUpMutation } from "./authSlice";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+
+import Form from "../../ui/Form";
+import Button from "../../ui/Button";
 import LinkButton from "../../ui/LinkButton";
 
 function SignUpForm() {
@@ -39,10 +38,6 @@ function SignUpForm() {
     if (isSignUpError) {
       setError("email", { type: "manual", message: signUpError?.message });
     }
-    //   setError("email", {
-    //     type: "manual",
-    //     message: "Dont Forget Your Username Should Be Cool!",
-    //   });
   }, [isSignUpError, signUpError, setError]);
 
   function onSubmit({ name, email, password }) {
@@ -107,7 +102,6 @@ function SignUpForm() {
           autoComplete="new-password"
           disabled={isLoading}
         />
-        {/* {errors.root.serverError && <p>{errors.root.serverError.message}</p>} */}
       </Form.FormRowVertical>
       <Form.FormRowVertical>
         <Button size="large" disabled={isLoading}>

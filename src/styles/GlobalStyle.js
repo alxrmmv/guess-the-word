@@ -63,12 +63,10 @@ html {
 
   @media screen and (min-width: 550px) and (min-height: 1000px) {
     font-size: 81.25%;
-    /* font-size: 100%; */
   } 
 
   @media screen and (min-width: 700px) and (min-height: 1200px) {
     font-size: 87.5%;
-    /* font-size: 100%; */
   } 
 }
 
@@ -76,9 +74,6 @@ body {
     font-family: 'Play', sans-serif;
     color: var(--color-grey-50);
     background-color: var(--color-violet-800);
-  
-    /* transition: color 0.3s, background-color 0.3s; */
-    /* min-height: 100vh; */
     line-height: 1.5;
     font-size: 1.6rem;
     height: 100vh;

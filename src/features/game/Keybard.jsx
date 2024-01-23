@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import KeyboardRow from "./KeyboardRow";
-
-import { useDispatch } from "react-redux";
-import { addLetter, makeMove, deleteLetter } from "./gameSlice";
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import styled from "styled-components";
+
+import KeyboardRow from "./KeyboardRow";
+import { addLetter, makeMove, deleteLetter } from "./gameSlice";
 
 const keyboard = [
   ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
@@ -14,7 +14,7 @@ const KeyboardContainer = styled.div`
   container-type: size;
   container-name: keyboard-resize-box;
   display: grid;
-  /* resize: both; */
+
   overflow: hidden;
 `;
 

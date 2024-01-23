@@ -4,8 +4,6 @@ import Letter from "./Letter";
 const StyledWord = styled.div`
   display: flex;
   align-items: center;
-  /* overflow: scroll; */
-  /* justify-content: center; */
   gap: 0.8rem;
 `;
 

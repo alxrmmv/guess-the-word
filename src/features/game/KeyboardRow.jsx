@@ -17,15 +17,12 @@ const StyledKeyboardRow = styled.div`
 function KeyboardRow({ keys }) {
   return (
     <StyledKeyboardRow>
-      {keys.map(
-        (key) =>
-          key === "enter" || key == "backspace" ? (
-            <KeyboardControlKey keyboardKey={key} key={key} />
-          ) : (
-            //
-            <KeyboardLetterKey keyboardKey={key.toLowerCase()} key={key} />
-          )
-        // <KeyboardLetterKey keyboardKey={key.toLowerCase()} key={key} />
+      {keys.map((key) =>
+        key === "enter" || key == "backspace" ? (
+          <KeyboardControlKey keyboardKey={key} key={key} />
+        ) : (
+          <KeyboardLetterKey keyboardKey={key.toLowerCase()} key={key} />
+        )
       )}
     </StyledKeyboardRow>
   );

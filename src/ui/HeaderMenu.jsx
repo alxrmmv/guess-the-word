@@ -39,9 +39,6 @@ function HeaderMenu() {
               <Icon>login</Icon>
             </ButtonIcon>
           </li>
-          {/* <li>
-            <Button onClick={() => navigate("/signup")}>Sign up</Button>
-          </li> */}
         </>
       )}
     </StyledHeaderMenu>

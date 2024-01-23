@@ -1,13 +1,11 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import {
   useGetCurrentUserQuery,
   useLogoutMutation,
   useUpdateCurrentUserMutation,
 } from "../authentication/authSlice";
-
 import Button from "../../ui/Button";
-
-import { useEffect } from "react";
 import Form from "../../ui/Form";
 
 function UserProfile() {
@@ -49,7 +47,6 @@ function UserProfile() {
 
   function onSubmit({ name, email, password }) {
     updateCurrentUser({ name, email, password });
-    // reset();
   }
 
   function handleLogout() {
@@ -62,7 +59,6 @@ function UserProfile() {
         <Form.FormRowVertical label="Name">
           <Form.Input
             {...register("name")}
-            // placeholder=""
             type="text"
             id="name"
             autoComplete="name"
@@ -77,7 +73,6 @@ function UserProfile() {
                 message: "Entered value does not match email format",
               },
             })}
-            //   placeholder={user.email}
             type="email"
             id="email"
             autoComplete="username"

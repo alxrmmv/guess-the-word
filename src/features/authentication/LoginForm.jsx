@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
-import Form from "../../ui/Form";
-
-import Button from "../../ui/Button";
+import { useNavigate } from "react-router-dom";
 
 import { useLoginMutation } from "./authSlice";
-import { useNavigate } from "react-router-dom";
+import Form from "../../ui/Form";
+import Button from "../../ui/Button";
 import LinkButton from "../../ui/LinkButton";
-
-
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -37,7 +34,6 @@ function LoginForm() {
           placeholder="Email"
           type="email"
           id="email"
-          // This makes this form better for password managers
           autoComplete="username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -55,9 +51,6 @@ function LoginForm() {
           disabled={isLoading}
         />
       </Form.FormRowVertical>
-      {/* <Button size="large" disabled={isLoggingIn}>
-          {!isLoggingIn ? "Login" : <Spinner />}
-        </Button> */}
       <Form.FormRowVertical>
         <Button size="medium" disabled={isLoading}>
           Login

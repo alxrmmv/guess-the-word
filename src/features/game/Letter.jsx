@@ -2,8 +2,6 @@ import styled, { css } from "styled-components";
 
 const types = {
   game: css`
-    /* height: 6rem; */
-    /* width: 6rem; */
     font-size: 3.2rem;
     color: var(--color-grey-50);
     border: 1px solid var(--color-main-500);
@@ -61,18 +59,13 @@ const statuses = {
 
   error: css`
     color: var(--color-red-500);
-    /* background-color: var(--color-grey-500); */
-    /* border-color: var(--color-grey-500); */
   `,
 };
 
 const Letter = styled.button`
-  /* display: inline-flex; */
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* justify-self: center; */
 
   line-height: 1;
   text-transform: uppercase;
@@ -87,9 +80,5 @@ Letter.defaultProps = {
   type: "game",
   $status: "",
 };
-
-// function Letter({ children, type }) {
-//   return <StyledLetter type={type}>{children}</StyledLetter>;
-// }
 
 export default Letter;

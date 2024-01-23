@@ -5,6 +5,7 @@ import {
 } from "@reduxjs/toolkit";
 import { checkWordInDictionary, getWord } from "../../services/apiWords";
 import { statsApi } from "../stats/statsSlice";
+
 const MAX_MOVES = 6;
 const WORD_LENGHT = 5;
 
@@ -22,8 +23,6 @@ export const makeMove = createAsyncThunk(
   async function (_, { getState }) {
     const { currentWord, gameLanguage, wordLength, hiddenWord } =
       getState().game;
-
-    // if (gameStaus !== "playing") return true;
 
     if (currentWord.word.length < wordLength) return "";
 

@@ -1,17 +1,17 @@
-import styled from "styled-components";
-import Words from "./Words";
-import Keyboard from "./Keybard";
-import { useDispatch, useSelector } from "react-redux";
-import GameResult from "./GameResult";
-import { fetchWord } from "./gameSlice";
 import { useEffect } from "react";
-import Spinner from "../../ui/Spinner";
+import { useDispatch, useSelector } from "react-redux";
+import styled from "styled-components";
+
 import { useGetCurrentUserQuery } from "../authentication/authSlice";
 import { useRecordGameMutation } from "../stats/statsSlice";
+import Words from "./Words";
+import Keyboard from "./Keybard";
+import GameResult from "./GameResult";
+import { fetchWord } from "./gameSlice";
+import Spinner from "../../ui/Spinner";
 
 const StyledGameBox = styled.div`
   display: grid;
-
   grid-template-rows: 1fr 29%;
 
   @media screen and (min-width: 700px) and (min-height: 1200px) {
@@ -48,7 +48,6 @@ function GameBox() {
       {gameStatus != "fetchingWord" && <Words />}
       {gameStatus === "playing" && <Keyboard />}
       {gameStatus == "ended" && <GameResult />}
-      {/* <GameResult /> */}
     </StyledGameBox>
   );
 }

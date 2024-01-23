@@ -21,10 +21,6 @@ const StyledGameResult = styled.div`
   padding: 1.2rem;
 
   overflow: auto;
-  /* margin-top: auto; */
-
-  /* max-width: 60rem; */
-  /* margin: auto; */
 `;
 
 const HiddenWord = styled.span`
@@ -38,18 +34,12 @@ const HiddenWord = styled.span`
 const ResultTitle = styled.h2`
   font-size: 2rem;
   font-weight: 500;
-  /* margin-bottom: 1.2rem; */
-
-  /* text-transform: uppercase; */
 `;
 const ResultText = styled.p`
   color: var(--color-grey-200);
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
-  /* margin-bottom: 1.2rem; */
-
-  /* text-transform: uppercase; */
 `;
 
 const ButtonContainer = styled.div`

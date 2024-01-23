@@ -1,11 +1,9 @@
+import { useSelector } from "react-redux";
 import styled from "styled-components";
+
 import Word from "./Word";
 import { selectGameField } from "./gameSlice";
 
-import { useSelector } from "react-redux";
-// import { fetchWord } from "./gameSlice";
-// import { useEffect } from "react";
-// import Spinner from "../../ui/Spinner";
 
 const WordsContainer = styled.div`
   container-type: size;
@@ -38,7 +36,6 @@ const StyledWords = styled.div`
   gap: 0.8rem;
   padding: 1.2rem;
 
-  /* background-color: var(--color-grey-300); */
 `;
 
 function Words() {
