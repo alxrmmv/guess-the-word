@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-
 import Letter from "./Letter";
 import { selectLetterStatus } from "./gameSlice";
 

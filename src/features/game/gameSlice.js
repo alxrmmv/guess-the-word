@@ -5,10 +5,8 @@ import {
 } from "@reduxjs/toolkit";
 import { checkWordInDictionary, getWord } from "../../services/apiWords";
 import { statsApi } from "../stats/statsSlice";
-
 const MAX_MOVES = 6;
 const WORD_LENGHT = 5;
-
 export const fetchWord = createAsyncThunk(
   "game/fetchWord",
   async function (_, { getState }) {

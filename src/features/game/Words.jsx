@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Word from "./Word";
 import { selectGameField } from "./gameSlice";
 
-
 const WordsContainer = styled.div`
   container-type: size;
   container-name: words-resize-box;
@@ -35,7 +34,6 @@ const StyledWords = styled.div`
 
   gap: 0.8rem;
   padding: 1.2rem;
-
 `;
 
 function Words() {

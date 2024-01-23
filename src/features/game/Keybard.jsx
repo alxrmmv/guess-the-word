@@ -14,7 +14,6 @@ const KeyboardContainer = styled.div`
   container-type: size;
   container-name: keyboard-resize-box;
   display: grid;
-
   overflow: hidden;
 `;
 
