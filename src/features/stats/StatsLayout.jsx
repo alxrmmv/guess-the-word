@@ -6,11 +6,13 @@ import Spinner from "../../ui/Spinner";
 import ErrorMessage from "../../ui/ErrorMessage";
 
 const StyledStatsLayout = styled.div`
-  margin: 2.4rem 1.2rem;
+  margin: 0 auto;
+  padding: 2.4rem 1.2rem;
 
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.8rem;
+  max-width: 40rem;
 `;
 
 function StatsLayout() {
