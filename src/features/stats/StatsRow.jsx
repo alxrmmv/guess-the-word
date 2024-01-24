@@ -12,11 +12,11 @@ const StyledStatsRow = styled.div`
 `;
 
 const StatsName = styled.p`
-  font-size: 1.6rem;
+  font-size: 2rem;
 `;
 
 const StatsValue = styled.p`
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--color-main-500);
 `;
 

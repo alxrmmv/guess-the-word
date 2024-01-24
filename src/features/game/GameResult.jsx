@@ -11,14 +11,14 @@ const StyledGameResult = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 0.8rem;
 
   border-top-left-radius: var(--border-radius-xlg);
   border-top-right-radius: var(--border-radius-xlg);
   background-color: var(--color-violet-700);
   border: 1px solid var(--color-grey-700);
   border-bottom: none;
-  padding: 1.2rem;
+  padding: 0;
 
   overflow: auto;
 `;
@@ -32,12 +32,12 @@ const HiddenWord = styled.span`
 `;
 
 const ResultTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
 `;
 const ResultText = styled.p`
   color: var(--color-grey-200);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
 `;
@@ -73,7 +73,7 @@ function GameResult() {
           <ResultText>Do you want to try another one?</ResultText>
         </>
       )}
-      {gameResult === "won" && (
+      {gameResult === "" && (
         <>
           <ResultTitle>🥳 Awsome!</ResultTitle>
           {isAuthenticated ? (

@@ -6,9 +6,9 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.4rem 1.2rem;
+  padding: 2rem 1.2rem;
 
-  @media screen and (min-aspect-ratio: 9/16) {
+  @media screen and (min-aspect-ratio: 10/16) {
     padding-left: 3.6rem;
     padding-right: 3.6rem;
   }

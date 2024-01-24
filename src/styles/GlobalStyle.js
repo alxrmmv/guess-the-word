@@ -61,13 +61,13 @@ html {
     font-size: 75%;
   }
 
-  @media screen and (min-width: 550px) and (min-height: 1000px) {
+  /* @media screen and (min-width: 550px) and (min-height: 1000px) {
     font-size: 81.25%;
   } 
 
   @media screen and (min-width: 700px) and (min-height: 1200px) {
     font-size: 87.5%;
-  } 
+  }  */
 }
 
 body {

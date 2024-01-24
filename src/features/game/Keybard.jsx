@@ -20,19 +20,19 @@ const KeyboardContainer = styled.div`
 const StyledKeyboard = styled.div`
   //Resizing with aspent rario
   width: 100%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 2.3/1;
   object-fit: contain;
   overflow: auto;
   margin: auto;
 
-  @container keyboard-resize-box (aspect-ratio > 2/1) {
+  @container keyboard-resize-box (aspect-ratio > 2.3/1) {
     width: auto;
     height: 100%;
   }
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 
-  padding: 0.8rem;
+  padding: 0.1rem;
 `;
 
 function Keybard() {

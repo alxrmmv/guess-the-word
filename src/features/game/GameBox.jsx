@@ -12,10 +12,10 @@ import Spinner from "../../ui/Spinner";
 
 const StyledGameBox = styled.div`
   display: grid;
-  grid-template-rows: 1fr 29%;
+  grid-template-rows: 1fr max(30%, 13.5rem);
 
-  @media screen and (min-width: 700px) and (min-height: 1200px) {
-    grid-template-rows: 1fr 28%;
+  @media screen and (min-width: 400px) and (min-height: 600px) {
+    grid-template-rows: 1fr min(26%, 20rem);
   }
 
   gap: 0.8rem;

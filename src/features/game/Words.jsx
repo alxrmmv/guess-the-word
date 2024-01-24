@@ -33,7 +33,7 @@ const StyledWords = styled.div`
   align-content: start;
 
   gap: 0.8rem;
-  padding: 1.2rem;
+  padding: 0.4rem 0.8rem;
 `;
 
 function Words() {

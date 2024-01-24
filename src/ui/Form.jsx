@@ -19,9 +19,10 @@ const Form = styled.form`
 `;
 
 const StyledFormRow = styled.div`
+  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.4rem;
   ${(props) => justifications[props.$justify]}
 `;
 
@@ -37,7 +38,7 @@ const Error = styled.span`
 
 const Input = styled.input`
   font-family: inherit;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--color-grey-800);
   border: none;
   background-color: var(--color-grey-100);

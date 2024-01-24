@@ -19,22 +19,14 @@ const types = {
   `,
 
   keyboard: css`
-    height: 70%;
+    height: 80%;
     width: auto;
     aspect-ratio: 3/4;
-    font-size: 1.6rem;
+    font-size: 2rem;
     border-radius: var(--border-radius-md);
 
     border: 1px solid var(--color-grey-500);
     cursor: pointer;
-
-    @media screen and (min-width: 400px) and (min-height: 700px) {
-      font-size: 1.8rem;
-    }
-
-    @media screen and (min-width: 600px) and (min-height: 1080px) {
-      font-size: 2rem;
-    }
   `,
 };
 
