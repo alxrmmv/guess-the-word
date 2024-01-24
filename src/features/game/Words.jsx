@@ -14,7 +14,7 @@ const WordsContainer = styled.div`
 
 const StyledWords = styled.div`
   //Resizing with aspent rario
-  width: 100%;
+  width: min(100%, 50rem);
   aspect-ratio: 5/6;
   object-fit: contain;
   overflow: auto;
@@ -25,7 +25,7 @@ const StyledWords = styled.div`
 
   @container words-resize-box (aspect-ratio > 5/6) {
     width: auto;
-    height: 100%;
+    height: min(100%, 60rem);
   }
 
   display: grid;
