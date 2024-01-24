@@ -15,7 +15,7 @@ const StyledGameBox = styled.div`
   grid-template-rows: 1fr max(30%, 13.5rem);
 
   @media screen and (min-width: 400px) and (min-height: 600px) {
-    grid-template-rows: 1fr min(26%, 20rem);
+    grid-template-rows: 1fr min(30%, 22rem);
   }
 
   gap: 0.8rem;

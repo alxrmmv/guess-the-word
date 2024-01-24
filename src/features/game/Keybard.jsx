@@ -15,6 +15,9 @@ const KeyboardContainer = styled.div`
   container-name: keyboard-resize-box;
   display: grid;
   overflow: hidden;
+  @media screen and (min-width: 400px) and (min-height: 600px) {
+    padding: 1.2rem;
+  }
 `;
 
 const StyledKeyboard = styled.div`
