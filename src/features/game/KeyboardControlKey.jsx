@@ -24,7 +24,7 @@ const keyboardKeys = {
 };
 
 const StyledKeyboardСontrolKey = styled.button`
-  height: 75%;
+  height: 80%;
   width: auto;
   aspect-ratio: 1/1;
   font-size: 1.6rem;

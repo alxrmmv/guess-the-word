@@ -73,7 +73,7 @@ function GameResult() {
           <ResultText>Do you want to try another one?</ResultText>
         </>
       )}
-      {gameResult === "" && (
+      {gameResult === "won" && (
         <>
           <ResultTitle>🥳 Awsome!</ResultTitle>
           {isAuthenticated ? (

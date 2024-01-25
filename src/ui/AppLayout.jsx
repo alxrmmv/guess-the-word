@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const StyledAppLayout = styled.div`
   height: 100vh;
-  height: 100dvh;
+  height: 100svh;
   display: grid;
   grid-template-rows: auto 1fr;
   background-color: var(--color-violet-800);
