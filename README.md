@@ -1,4 +1,4 @@
-# Guess the Word
+# [Guess the Word](https://guess-the-word-alx.netlify.app/)
 
 This is another implementation of the super popular game Wordle, created for educational perposes.
 
